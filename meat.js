@@ -593,10 +593,14 @@ let userCommands = {
     if (this.room.rid != "bonzi_tv") return;
 
     var bonziTvIdent = [
-      "https://www.youtube.com/watch?v=w9uJg68CV4g",
-      "https://www.youtube.com/watch?v=GCA5CB5uUyA",
-      "https://www.youtube.com/watch?v=rBPKOZNd7mA",
-      "https://www.youtube.com/watch?v=VJs_VALzi_8",
+      "https://www.youtube.com/watch?v=y9mkFzDjmv0",
+"https://www.youtube.com/watch?v=5H1TaN1gO1E",
+"https://www.youtube.com/watch?v=x1yiXmkNfdc",
+"https://www.youtube.com/watch?v=H6b2wn2InKM",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=h0m34g9rVys",
+"https://www.youtube.com/watch?v=Za0jRpnvVko"
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
@@ -611,22 +615,22 @@ let userCommands = {
   },
   setbonzitvvid4: function (vidRaw) {
     var bonziTvIdent = [
-      "https://www.youtube.com/watch?v=hb59QZW2SCA",
-      "https://www.youtube.com/watch?v=b2OUKjLzcEc",
-      "https://www.youtube.com/watch?v=Uyw-bne3G2A",
-      "https://www.youtube.com/watch?v=gcGI1f24eyM",
-      "https://www.youtube.com/watch?v=liqetY2e7a8",
-      "https://www.youtube.com/watch?v=AykkOSaLphY",
-      "https://www.youtube.com/watch?v=DSYiXCEWsVc",
-      "https://www.youtube.com/watch?v=3rvFiHa6rJk",
-      "https://www.youtube.com/watch?v=9943uVZ-eL4",
-      "https://www.youtube.com/watch?v=EuEkdlCn-gI",
-      "https://www.youtube.com/watch?v=DuD_boVOl54",
-      "https://www.youtube.com/watch?v=97dyt7MXWpo",
-      "https://www.youtube.com/watch?v=APAcU3YBhYc",
-      "https://www.youtube.com/watch?v=exjhztp_IQY",
-      "https://www.youtube.com/watch?v=GCA5CB5uUyA",
-      "https://www.youtube.com/watch?v=5ls7g9eH7ss",
+      "https://www.youtube.com/watch?v=y9mkFzDjmv0",
+      "https://www.youtube.com/watch?v=5H1TaN1gO1E",
+      "https://www.youtube.com/watch?v=x1yiXmkNfdc",
+      "https://www.youtube.com/watch?v=H6b2wn2InKM",
+      "https://www.youtube.com/watch?v=vXZw29lK1Uk",
+      "https://www.youtube.com/watch?v=A95ESwEBl4Q",
+      "https://www.youtube.com/watch?v=h0m34g9rVys",
+      "https://www.youtube.com/watch?v=Za0jRpnvVko",
+      "https://www.youtube.com/watch?v=y9mkFzDjmv0",
+"https://www.youtube.com/watch?v=5H1TaN1gO1E",
+"https://www.youtube.com/watch?v=x1yiXmkNfdc",
+"https://www.youtube.com/watch?v=H6b2wn2InKM",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=h0m34g9rVys",
+"https://www.youtube.com/watch?v=Za0jRpnvVko"
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
@@ -1023,10 +1027,14 @@ let userCommands = {
     if (this.room.rid != "bonzi_tv") return;
 
     var bonziTvIdent = [
-      "https://www.youtube.com/watch?v=l_F7ZyzufPg",
-      "https://www.youtube.com/watch?v=GCA5CB5uUyA",
-      "https://www.youtube.com/watch?v=rBPKOZNd7mA",
-      "https://www.youtube.com/watch?v=VJs_VALzi_8",
+      "https://www.youtube.com/watch?v=y9mkFzDjmv0",
+      "https://www.youtube.com/watch?v=5H1TaN1gO1E",
+      "https://www.youtube.com/watch?v=x1yiXmkNfdc",
+      "https://www.youtube.com/watch?v=H6b2wn2InKM",
+      "https://www.youtube.com/watch?v=vXZw29lK1Uk",
+      "https://www.youtube.com/watch?v=A95ESwEBl4Q",
+      "https://www.youtube.com/watch?v=h0m34g9rVys",
+      "https://www.youtube.com/watch?v=Za0jRpnvVko"
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
