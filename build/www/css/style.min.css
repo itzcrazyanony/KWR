@@ -956,7 +956,6 @@ input[type="text"] {
 
 .bubble-content {
   padding: 12px;
-  max-height: 175px;
   user-select: text;
   -webkit-user-select: text;
   overflow-x: hidden;
@@ -995,6 +994,46 @@ input[type="text"] {
   height: 14px;
   top: 12px;
   right: -22px;
+}
+
+.bubble.bubble_autosize .bubble-content,
+.bubble.image .bubble-content {
+  max-height: none;
+}
+.bubble.bubble_autosize .bubble-content video,
+.bubble.image .bubble-content video {
+  width: 100%;
+}
+.bubble.bubble_autosize .bubble-content img,
+.bubble.image .bubble-content img {
+  width: 100%;
+}
+.bubble.video-yt {
+  min-width: 328px;
+  max-width: 500px;
+  width: auto;
+}
+
+.bubble.video-yt .bubble-content {
+  max-height: none;
+}
+.bubble.autosize,
+.bubble.image {
+  min-width: 328px;
+  max-width: 504px;
+  width: auto;
+}
+.bubble.autosize .bubble-content,
+.bubble.image .bubble-content {
+  max-height: none;
+}
+.bubble.autosize .bubble-content video,
+.bubble.image .bubble-content video {
+  width: 100%;
+}
+.bubble.autosize .bubble-content img,
+.bubble.image .bubble-content img {
+  width: 100%;
 }
 
 .bubble-right {

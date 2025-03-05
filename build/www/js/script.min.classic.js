@@ -8,7 +8,6 @@ let autosave = true;
 var allowCrossColors = false;
 var warnedUserAboutUGC = false;
 var espeaktts = true;
-var SAPI4 = false;
 ("use strict");
 function updateAds() {
   var a = $(window).height() - $(adElement).height(),
@@ -1443,7 +1442,7 @@ var _createClass = (function () {
               audio.onended = function () {
                 d.clearDialog();
               };
-            } else if (this.userPublic.voice == "espeak") {
+            } else if (this.userPublic.voice == "espeak" || espeaktts) {
               speak.play(
                 b,
                 { pitch: this.userPublic.pitch, speed: this.userPublic.speed },
