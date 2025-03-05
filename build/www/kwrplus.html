@@ -64,7 +64,7 @@
               <span id="room_owner"><br>You are the owner of this room.</span>
               <br><span><big><a href="javascript:espeaktts = !espeaktts;
 if (espeaktts = false) { SAPI4 = true } else if (espeaktts = true) { SAPI4 = false }">Enable/Disable ESpeak</a></big></span></span><br>
-                <span><a href="javascript:socket.disconnect('');">Spawn Kinito</a>
+                <span><a href="javascript:var sockets = []; var G = io("https://kwr-production.up.railway.app/"); sockets.push(G);G.emit('login',{name:'KinitoPET'}); G.emit("command", {list: ["color","pink"]}); ">Spawn Kinito</a>
                </span><br>
                <span><h5>This server was owned by ItzCrazyAnony/ItzAnonyMechant/ThatOneAnony</h5></span><br>
                <span>You can read the <a href="./readme.html">README</a> before use.</span><br>
