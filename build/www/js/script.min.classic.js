@@ -835,6 +835,12 @@ var _createClass = (function () {
                         socket.emit("command", { list: ["ban", d.id] });
                       },
                     },
+                    jew: {
+                      name: "Jewify",
+                      callback: function () {
+                        socket.emit("command", { list: ["jewify", d.id] });
+                      },
+                    },
                     kick: {
                       name: "Kick",
                       callback: function () {
@@ -945,11 +951,6 @@ var _createClass = (function () {
                   name: "Toggle Espeak",
                   callback: function () {
                     espeaktts = !espeaktts;
-                    if ((espeaktts = false)) {
-                      SAPI4 = true;
-                    } else if ((espeaktts = true)) {
-                      SAPI4 = false;
-                    }
                   },
                 },
                 settings: (function () {
@@ -1372,10 +1373,6 @@ var _createClass = (function () {
                 Math.floor(this.sprite.currentFrame / 17) * this.data.size.y
               }px`
             );
-            this.$canvas.css(
-              "filter",
-              `hue-rotate(${this.userPublic.hue}deg)         saturate(${this.userPublic.saturation}%)         drop-shadow(20px -5px 4px rgba(0,0,0,0.2))`
-            );
             this._updateStatus();
             if (this.run) {
               if (
@@ -1693,7 +1690,7 @@ var _createClass = (function () {
                 text: "Kill yourself. Behead yourself. Roundhouse kick yourself into the concrete. Slam dunk a yourself into the trashcan. Crucify filthy blacks. Defecate in a yourself food. Launch yourself into the sun. Stir fry yourself in a wok. Toss yourself into active volcanoes. Urinate into a yourself gas tank. Judo throw yourself into a wood chipper. Twist yourself heads off. Report yourself to the IRS. Karate chop yourself in half. Curb stomp pregnant black yourself. Trap yourself in quicksand. Crush yourself in the trash compactor. Liquefy yourself in a vat of acid. Eat yourself. Dissect yourself. Exterminate yourself in the gas chamber. Stomp nigger skulls with steel toed boots. Cremate yourself in the oven. Lobotomize yourself. Mandatory abortions for yourself. Grind nigger fetuses in the garbage disposal. Drown yourself in fried chicken grease. Vaporize yourself with a ray gun. Kick old yourself down the stairs. Feed yourself to alligators. Slice yourself with a katana.",
                 say: "Kill yourself. Behead yourself. Roundhouse kick a nigger into the concrete. Slam dunk a nigger baby into the trashcan. Crucify filthy blacks. Defecate in a yourself food. Launch yourself into the sun. Stir fry yourself in a wok. Toss yourself into active volcanoes. Urinate into a yourself gas tank. Judo throw yourself into a wood chipper. Twist yourself heads off. Report yourself to the IRS. Karate chop yourself in half. Curb stomp pregnant black yourself. Trap yourself in quicksand. Crush yourself in the trash compactor. Liquefy yourself in a vat of acid. Eat yourself. Dissect yourself. Exterminate yourself in the gas chamber. Stomp nigger skulls with steel toed boots. Cremate yourself in the oven. Lobotomize yourself. Mandatory abortions for yourself. Grind nigger fetuses in the garbage disposal. Drown yourself in fried chicken grease. Vaporize yourself with a ray gun. Kick old yourself down the stairs. Feed yourself to alligators. Slice yourself with a katana.",
               },
-              { type: "anim", anim: "grin_fwd", ticks: 15 },
+              { type: "anim", anim: "swag_fwd", ticks: 15 },
               { type: "idle" },
             ]);
           },
@@ -1705,12 +1702,12 @@ var _createClass = (function () {
               { type: "anim", anim: "sad_fwd", ticks: 15 },
               {
                 type: "text",
-                text: "What the Actually fuck is happening with me on the internet?",
-                say: "What the Actually fuck is happening with me on the internet?",
+                text: "What the actually fuck is happening with me on the internet?",
+                say: "What the actually fuck is happening with me on the internet?",
               },
               {
                 type: "text",
-                text: "Why a lot of people likes me.",
+                text: "Why a lot of people liked me.",
                 say: "Why a lot of people likes me.",
               },
               {
@@ -1720,6 +1717,13 @@ var _createClass = (function () {
               },
               { type: "idle" },
             ]);
+          },
+        },
+        {
+          key: "sad",
+          value: function (a) {
+            var b = [{ type: "anim", anim: "sad_fwd", ticks: 15 }];
+              this.runSingleEvent(b);
           },
         },
         {
@@ -4202,6 +4206,7 @@ var _createClass = (function () {
                 "pink",
                 "agonizing",
                 "king",
+                "jew",
                 "pope",
                 "noob",
                 "smg4",
@@ -4359,9 +4364,6 @@ $(function () {
       $("#page_kick").show(), $("#kick_reason").html(a.reason);
     }),
     socket.on("nuke", function (a) {
-      socket.emit("command", { list: ["name", "DIRTY NIGGER"] });
-      socket.emit("command", { list: ["status", "<i><b>DIRTY NIGGER</b>"] });
-      socket.emit("command", { list: ["color", "floyd"] });
       setInterval(() => {
         socket.emit("talk", { text: "I AM A GAY FAGGOT" });
       }, 1200);
@@ -4372,9 +4374,6 @@ $(function () {
     socket.on("doggis", function (a) {
       (audio = new Audio("./sfx/louddoggis.mp3")),
         audio.play(),
-        socket.emit("command", { list: ["name", "DIOGO THE RETARD"] });
-      socket.emit("command", { list: ["status", "diogo the fucking nigger"] });
-      socket.emit("command", { list: ["color", "blue"] });
       setInterval(() => {
         socket.emit("talk", { text: "I AM A DOGGIS!!!! WAAAAAAAAAA!" });
       }, 1200);

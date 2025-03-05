@@ -1159,6 +1159,8 @@ body.vaporwave #chat_send:active {
   color: #000;
   top: -22px;
   width: max-content;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #chat_bar {

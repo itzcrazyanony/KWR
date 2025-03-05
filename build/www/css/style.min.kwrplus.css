@@ -1156,6 +1156,8 @@ body.vaporwave #chat_send:active {
   padding: 4px;
   background: #ffffe1;
   font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
   color: #000;
   top: -22px;
   width: max-content;
