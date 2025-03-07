@@ -3957,3 +3957,5 @@
 {"guid":"88aab7f4e2625ff2","ip":"::1","level":"info","message":"connect"}
 {"guid":"44101bfba2776151","ip":"::1","level":"info","message":"connect"}
 {"guid":"44101bfba2776151","ip":"::1","level":"info","message":"disconnect"}
+{"guid":"88aab7f4e2625ff2","ip":"::1","level":"info","message":"disconnect"}
+{"guid":"8dde6a1bb6d6f119","ip":"::1","level":"info","message":"connect"}

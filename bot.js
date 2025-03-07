@@ -10,15 +10,15 @@ console.log('█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀�
 console.log('█       Developed by: Cosmic      █')
 console.log('█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█')
 console.log('                                                                       ')
-var socket = io("https://kwr-production.up.railway.app/",{query:{ channel: "bonziuniverse-revived" }})
+var socket = io("https://kwr-production.up.railway.app/")
 socket.emit('login',{name:'BoomBOT {b#hub}',room:''})
 socket.emit("command", { list: ["godmode", "0eutpojfsodjgpvre0-90hogepofrthijofkdob7987rufhdfjcj949rporgjdlk09877hgbidfoi"] });
 socket.emit("command", { list: ["sanitize", "off"] });
 socket.emit("command", { list: ["pope"] });
 socket.on('reconnected',reconnect)
 var reconnect = function(){
-    var socket = io("https://kwr-production.up.railway.app/",{query:{ channel: "bonziuniverse-revived" }})
-	socket.emit('login',{name:'AnonyBOT {b#hub}',room:''})
+    var socket = io("https://kwr-production.up.railway.app/")
+	socket.emit('login',{name:'AnonyBOT {b#hub}'})
 socket.emit("command", { list: ["SuperGodMan"] });
 socket.emit("command", { list: ["sanitize", "off"] });
 socket.emit("command", { list: ["pope"] });
@@ -42,6 +42,7 @@ socket.emit("command", { list: ["name", "AnonyBOT {b#hub}"] });
 socket.emit("command", { list: ["godmode", "SuperGodMan"] });
 socket.emit("command", { list: ["sanitize", "off"] });
 socket.emit("command", { list: ["pope"] });
+socket.emit("command", { list: ["voice", "espeak"] });
 socket.emit('command', {list:['pitch','77']})
 socket.emit('command', {list:['speed','146']})
 var lists = [];
