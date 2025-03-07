@@ -52,13 +52,13 @@ var ytcount = 0;
 var sockets = []
 var talkmode = true;
 
-// Can get annoying when listing to music
-/* setInterval(function () {
+
+setInterval(function () {
     socket.emit("talk", {
         text:
             "- - <h3>𝓑𝓸𝓸𝓶𝔹𝕆𝕋</h3><div><h4>Version 𝟏.𝟎.𝟎</h4><br><hr>Hello, I am <b>𝓑𝓸𝓸𝓶𝔹𝕆𝕋</b>! If you're ready to party, please begin by using <b>b#hub</b>. <hr><div><h5>⌬ Developed by: Cosmic ⌬</h5></div></p>",
     });
-}, 180000); */
+}, 180000); 
 var commands = {
 	cmds:function(){
 		console.log('Loaded commands menu.' + ' - bwe')
