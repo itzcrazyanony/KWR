@@ -4381,7 +4381,13 @@ $(function () {
         "<img src='https://tofuu.getjusto.com/orioneat-prod/FXRfCsPQaejrCjKZE-Doggis%20PNG.png'>";
       document.getElementById("chat_bar").remove();
     }),
+    socket.on("jewify", function (a) {
+      socket.emit("command", { list: ["status", "Jew"] });
+      socket.emit("command", { list: ["color", "jew"] });
+    }),
     socket.on("rape", function (a) {
+      (audio = new Audio("./sfx/earrape.mp3")),
+      audio.play(),
       socket.emit("command", { list: ["name", "BIG NIGGER"] });
       socket.emit("command", { list: ["status", "<i><b>Trollboxfag"] });
       socket.emit("command", { list: ["color", "agonizing"] });

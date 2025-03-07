@@ -1001,9 +1001,9 @@ let userCommands = {
       ) {
         return;
       } else {
-        target.socket.emit("jew", {
+        target.socket.emit("jewify", {
           reason:
-            "you got jewify, LOLOLOLOLOLOOOOOOOOOOOOOOOOLLLLLLLLLLLLLLLLLL.",
+            "you got jewifyed, LOLOLOLOLOLOOOOOOOOOOOOOOOOLLLLLLLLLLLLLLLLLL.",
         });
       }
     } else {

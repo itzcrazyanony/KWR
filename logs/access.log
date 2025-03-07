@@ -3991,3 +3991,5 @@
 {"guid":"93d9c2b6142d2852","ip":"::1","level":"info","message":"connect"}
 {"guid":"b89241be185ba656","ip":"::1","level":"info","message":"connect"}
 {"guid":"fd9f0e1c5d848382","ip":"::1","level":"info","message":"connect"}
+{"guid":"fd9f0e1c5d848382","ip":"::1","level":"info","message":"disconnect"}
+{"guid":"269154c00ebdc956","ip":"::1","level":"info","message":"connect"}
