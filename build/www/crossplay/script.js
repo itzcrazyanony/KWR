@@ -6,15 +6,14 @@ const button = document.querySelector(".button");
   const animateStart = () => {
     container.classList.add("told-stan");
   }
-  const InputChangeHandler = (event)
- => {
+  const InputChangeHandler = (event) => {
    if (event.target.value.includes("Where did ")) {
      container.classList.add("eye-squint");
    } else {
      container.classList.remove("eye-squint");
    }
 
-   if (event.target.value === ("Where did your mom go?")) {
+   if (event.target.value === ("Where do you even go kill yourself like a nigger?")) {
       container.classList.add("animating-tear");
     } else if (container.classList.value.includes("animating-tear")) {
       container.classList.remove("animating-tear");
