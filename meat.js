@@ -874,12 +874,25 @@ let userCommands = {
   },
   bless: function () {
     this.private.runlevel = 3;
-    this.public.color = "blessed";
-    this.public.status = "Blessed";
+    this.room.color = "blessed";
+    this.room.status = "Blessed";
     this.room.emit("bless", {
       reason: "You got blessed.",
     });
   },
+  "amplitude": function (amplitude) {
+        amplitude = parseInt(amplitude);
+
+        if (isNaN(amplitude)) return;
+
+        if (this.private.runlevel != 3) {
+            this.public.amplitude = Math.max(Math.min(parseInt(amplitude), this.room.prefs.amplitude.max), this.room.prefs.amplitude.min);
+        } else {
+            this.public.amplitude = amplitude;
+        }
+
+        this.room.updateUser(this);
+    },
   ban: function (data) {
     if (this.private.runlevel < 3) {
       this.socket.emit("alert", "admin=true");

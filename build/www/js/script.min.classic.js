@@ -688,6 +688,7 @@ var _createClass = (function () {
           color: "pink",
           speed: 175,
           pitch: 50,
+          amplitude: 100, 
           voice: "en-us",
         }),
         (this.color = this.userPublic.color),
@@ -807,8 +808,7 @@ var _createClass = (function () {
                         });
                       },
                     },
-                    // NOTE: same as ask to kys, but longer
-                    behh: {
+                    nigger: {
                       name: "Total Nigger Death",
                       callback: function () {
                         socket.emit("command", {
@@ -1423,6 +1423,8 @@ var _createClass = (function () {
             this.$dialogCont[c ? "html" : "text"](a)
               [e ? "addClass" : "removeClass"]("bubble_greentext")
               .css("display", "block"),
+              this.synth = window.speechSynthesis;
+              this.voices = window.speechSynthesis.getVoices();
               this.stopSpeaking(),
               (this.goingToSpeak = !0);
             if (this.userPublic.voice == "default") {
@@ -1448,7 +1450,7 @@ var _createClass = (function () {
             } else if (this.userPublic.voice == "espeak" || espeaktts) {
               speak.play(
                 b,
-                { pitch: this.userPublic.pitch, speed: this.userPublic.speed },
+                { pitch: this.userPublic.pitch, speed: this.userPublic.speed, amplitude: this.userPublic.amplitude },
                 function () {
                   d.clearDialog();
                 },
