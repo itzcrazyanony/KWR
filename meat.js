@@ -641,68 +641,68 @@ let userCommands = {
 
     if (Math.random() * 3 == 1) {
       if ((hours == 16 && minutes <= 30) || (hours == 9 && minutes <= 25)) {
-        var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-        var vid = videoIds4PM2430PM[num]
+        var num = Math.floor(Math.random() * VideoIds4PM2430PM.length);
+        var vid = VideoIds4PM2430PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
 
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds4PM2430PM[num]
+          id: VideoIds4PM2430PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 17) {
-        var num = Math.floor(Math.random() * videoIds5PM.length);
-        var vid = videoIds5PM[num]
+        var num = Math.floor(Math.random() * VideoIds5PM.length);
+        var vid = VideoIds5PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds5PM[num]
+          id: VideoIds5PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 18 && minutes <= 30) {
-        var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid = videoIds6PM[num]
+        var num = Math.floor(Math.random() * VideoIds6PM.length);
+        var vid = VideoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds6PM[num]
+          id: VideoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
         // uhhhh i regret making that bonziworld mod :/
       } else if (hours == 19 && minutes <= 22) {
-        var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid = videoIds6PM[num]
+        var num = Math.floor(Math.random() * VideoIds6PM.length);
+        var vid = VideoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds6PM[num]
+          id: VideoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else {
-        var num = Math.floor(Math.random() * videoIds25MinutesofMSAgent.length);
-        var vid = videoIds25MinutesofMSAgent[num]
+        var num = Math.floor(Math.random() * VideoIds25MinutesofMSAgent.length);
+        var vid = VideoIds25MinutesofMSAgent[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds25MinutesofMSAgent[num]
+          id: VideoIds25MinutesofMSAgent[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
@@ -714,53 +714,53 @@ let userCommands = {
         (hours == 9 && minutes <= 25) ||
         (hours == 13 && minutes <= 20)
       ) {
-        var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-        var vid = videoIds4PM2430PM[num]
+        var num = Math.floor(Math.random() * VideoIds4PM2430PM.length);
+        var vid = VideoIds4PM2430PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds4PM2430PM[num]
+          id: VideoIds4PM2430PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 17) {
-        var num = Math.floor(Math.random() * videoIds5PM.length);
-        var vid = videoIds5PM[num]
+        var num = Math.floor(Math.random() * VideoIds5PM.length);
+        var vid = VideoIds5PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds5PM[num]
+          id: VideoIds5PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 18 && minutes <= 30) {
-        var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid = videoIds6PM[num]
+        var num = Math.floor(Math.random() * VideoIds6PM.length);
+        var vid = VideoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds6PM[num]
+          id: VideoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 19 && hours <= 22) {
-        var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid = videoIds6PM[num]
+        var num = Math.floor(Math.random() * VideoIds6PM.length);
+        var vid = VideoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds6PM[num]
+          id: VideoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
@@ -777,14 +777,14 @@ let userCommands = {
           ),
         });
       } else {
-        var num = Math.floor(Math.random() * videoIds25MinutesofMSAgent.length);
-        var vid = videoIds25MinutesofMSAgent[num]
+        var num = Math.floor(Math.random() * VideoIds25MinutesofMSAgent.length);
+        var vid = VideoIds25MinutesofMSAgent[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds25MinutesofMSAgent[num]
+          id: VideoIds25MinutesofMSAgent[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
@@ -1117,67 +1117,67 @@ let userCommands = {
 
     if (Math.random() * 3 == 1) {
       if ((hours == 16 && minutes <= 30) || (hours == 9 && minutes <= 25)) {
-        var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-        var vid = videoIds4PM2430PM[num]
+        var num = Math.floor(Math.random() * VideoIds4PM2430PM.length);
+        var vid = VideoIds4PM2430PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
 
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds4PM2430PM[num]
+          id: VideoIds4PM2430PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 17) {
-        var num = Math.floor(Math.random() * videoIds5PM.length);
-        var vid = videoIds5PM[num]
+        var num = Math.floor(Math.random() * VideoIds5PM.length);
+        var vid = VideoIds5PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds5PM[num]
+          id: VideoIds5PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 18 && minutes <= 30) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * VideoIds7PM.length);
+        var vid = VideoIds7PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: VideoIds7PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 19 && minutes <= 22) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * VideoIds7PM.length);
+        var vid = VideoIds7PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: VideoIds7PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else {
-        var num = Math.floor(Math.random() * videoIds25MinutesofMSAgent.length);
-        var vid = videoIds25MinutesofMSAgent[num]
+        var num = Math.floor(Math.random() * VideoIds25MinutesofMSAgent.length);
+        var vid = VideoIds25MinutesofMSAgent[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds25MinutesofMSAgent[num]
+          id: VideoIds25MinutesofMSAgent[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
@@ -1189,53 +1189,53 @@ let userCommands = {
         (hours == 9 && minutes <= 25) ||
         (hours == 13 && minutes <= 20)
       ) {
-        var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-        var vid = videoIds4PM2430PM[num]
+        var num = Math.floor(Math.random() * VideoIds4PM2430PM.length);
+        var vid = VideoIds4PM2430PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds4PM2430PM[num]
+          id: VideoIds4PM2430PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 17) {
-        var num = Math.floor(Math.random() * videoIds5PM.length);
-        var vid = videoIds5PM[num]
+        var num = Math.floor(Math.random() * VideoIds5PM.length);
+        var vid = VideoIds5PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds5PM[num]
+          id: VideoIds5PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 18 && minutes <= 30) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * VideoIds7PM.length);
+        var vid = VideoIds7PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: VideoIds7PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
         });
       } else if (hours == 19 && hours <= 22) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * VideoIds7PM.length);
+        var vid = VideoIds7PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: VideoIds7PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
@@ -1252,14 +1252,14 @@ let userCommands = {
           ),
         });
       } else {
-        var num = Math.floor(Math.random() * videoIds25MinutesofMSAgent.length);
-        var vid = videoIds25MinutesofMSAgent[num]
+        var num = Math.floor(Math.random() * VideoIds25MinutesofMSAgent.length);
+        var vid = VideoIds25MinutesofMSAgent[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds25MinutesofMSAgent[num]
+          id: VideoIds25MinutesofMSAgent[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidID,
@@ -1499,26 +1499,26 @@ class User {
       const date = new Date();
       const hours = date.getHours();
       const minutes = date.getMinutes();
-      var bonziTvIdent = videoIdsCommercials;
+      var bonziTvIdent = VideoIdsCommercials;
       var ident = Math.floor(Math.random() * bonziTvIdent.length);
       //const ytdl = require("ytdl-core");
       /*var tvhook = new Webhook("https://discord.com/api/webhooks/1022179106412036166/8cJeQN1dFC78Rar0pdjAEyYnsFFq--ZiWZt4WTT1--pnLikWRzwGjOHWYEYmtdmyjcRg");*/
 
       if (bonziTvCommercialMode) {
-        var num = Math.floor(Math.random() * videoIdsCommercials.length);
-        var vid = videoIdsCommercials[num]
+        var num = Math.floor(Math.random() * VideoIdsCommercials.length);
+        var vid = VideoIdsCommercials[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
 
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIdsCommercials[
-            Math.floor(Math.random() * videoIdsCommercials.length)
+          id: VideoIdsCommercials[
+            Math.floor(Math.random() * VideoIdsCommercials.length)
           ]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
-          identId: videoIdsCommercials[num]
+          identId: VideoIdsCommercials[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
         });
@@ -1528,8 +1528,8 @@ class User {
           (hours == 9 && minutes <= 25) ||
           (hours == 13 && minutes <= 20)
         ) {
-          var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-          var vid = videoIds4PM2430PM[num]
+          var num = Math.floor(Math.random() * VideoIds4PM2430PM.length);
+          var vid = VideoIds4PM2430PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", "");
           this.room.vid = vid;
@@ -1566,7 +1566,7 @@ class User {
             }
           });*/
           this.room.emit("replaceTVWithURL", {
-            id: videoIds4PM2430PM[num]
+            id: VideoIds4PM2430PM[num]
               .replace("https://www.youtube.com/watch?v=", "")
               .replace("https://www.youtube.com/", ""),
             identId: bonziTvIdent[ident].replace(
@@ -1575,8 +1575,8 @@ class User {
             ),
           });
         } else if (hours == 17) {
-          var num = Math.floor(Math.random() * videoIds5PM.length);
-          var vid = videoIds5PM[num]
+          var num = Math.floor(Math.random() * VideoIds5PM.length);
+          var vid = VideoIds5PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", "");
           this.room.vid = vid;
@@ -1613,7 +1613,7 @@ class User {
           });*/
           //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
           this.room.emit("replaceTVWithURL", {
-            id: videoIds5PM[num]
+            id: VideoIds5PM[num]
               .replace("https://www.youtube.com/watch?v=", "")
               .replace("https://www.youtube.com/", ""),
             identId: bonziTvIdent[ident].replace(
@@ -1622,8 +1622,8 @@ class User {
             ),
           });
         } else if (hours == 18 && minutes <= 20) {
-          var num = Math.floor(Math.random() * videoIds7PM.length);
-          var vid = videoIds7PM[num]
+          var num = Math.floor(Math.random() * VideoIds7PM.length);
+          var vid = VideoIds7PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", "");
           this.room.vid = vid;
@@ -1660,7 +1660,7 @@ class User {
           });*/
           //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
           this.room.emit("replaceTVWithURL", {
-            id: videoIds7PM[num]
+            id: VideoIds7PM[num]
               .replace("https://www.youtube.com/watch?v=", "")
               .replace("https://www.youtube.com/", ""),
             identId: bonziTvIdent[ident].replace(
@@ -1669,8 +1669,8 @@ class User {
             ),
           });
         } else if (hours == 19 && minutes <= 22) {
-          var num = Math.floor(Math.random() * videoIds7PM.length);
-          var vid = videoIds7PM[num]
+          var num = Math.floor(Math.random() * VideoIds7PM.length);
+          var vid = VideoIds7PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", "");
           this.room.vid = vid;
@@ -1707,7 +1707,7 @@ class User {
           });*/
           //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
           this.room.emit("replaceTVWithURL", {
-            id: videoIds7PM[num]
+            id: VideoIds7PM[num]
               .replace("https://www.youtube.com/watch?v=", "")
               .replace("https://www.youtube.com/", ""),
             identId: bonziTvIdent[ident].replace(
@@ -1717,9 +1717,9 @@ class User {
           });
         } else {
           var num = Math.floor(
-            Math.random() * videoIds25MinutesofMSAgent.length
+            Math.random() * VideoIds25MinutesofMSAgent.length
           );
-          var vid = videoIds25MinutesofMSAgent[num]
+          var vid = VideoIds25MinutesofMSAgent[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", "");
           this.room.vid = vid;
@@ -1756,7 +1756,7 @@ class User {
           });*/
           //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
           this.room.emit("replaceTVWithURL", {
-            id: videoIds25MinutesofMSAgent[num]
+            id: VideoIds25MinutesofMSAgent[num]
               .replace("https://www.youtube.com/watch?v=", "")
               .replace("https://www.youtube.com/", ""),
             identId: bonziTvIdent[ident].replace(

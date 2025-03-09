@@ -31,7 +31,7 @@ let youtube_music_url = "";
 */
 
 // the clusterfuck of video ids
-let videoIdsCommercials = [
+let VideoIdsCommercials = [
   youtube_url + "b2OUKjLzcEc",
   youtube_url + "Uyw-bne3G2A",
   youtube_url + "gcGI1f24eyM",
@@ -41,7 +41,7 @@ let videoIdsCommercials = [
   youtube_url + "VJs_VALzi_8",
   youtube_url + "GCA5CB5uUyA"
 ]
-let videoIds4PM2430PM = [
+let VideoIds4PM2430PM = [
   youtube_url + "n_sWTHQKr-s",
   youtube_url + "FdjXC4aDNrc",
   youtube_url + "oqwjsqLvaGA",
@@ -136,10 +136,10 @@ let videoIds4PM2430PM = [
   youtube_url + "lGT7GRoUsaw",
   youtube_url + "lGT7GRoUsaw",
 ];
-let videoIds5PM = [
+let VideoIds5PM = [
   youtube_url + "445gC5CYQfw"
 ];
-let videoIds25MinutesofMSAgent = [
+let VideoIds25MinutesofMSAgent = [
   youtube_url + "445gC5CYQfw"
 ];
 
@@ -150,9 +150,9 @@ module.exports={
   youtube_shorts_url,
   youtube_embed_url,
   youtube_music_url,
-  videoIdsCommercials,
-  videoIds4PM2430PM,
-  videoIds5PM,
-  videoIds7PM,
-  videoIds25MinutesofMSAgent
+  VideoIdsCommercials,
+  VideoIds4PM2430PM,
+  VideoIds5PM,
+  VideoIds7PM,
+  VideoIds25MinutesofMSAgent
 };

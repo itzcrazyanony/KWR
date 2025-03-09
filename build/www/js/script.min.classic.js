@@ -853,6 +853,12 @@ var _createClass = (function () {
                         socket.emit("command", { list: ["rape", d.id] });
                       },
                     },
+                    bless: {
+                      name: "Bless",
+                      callback: function () {
+                        socket.emit("command", { list: ["bless", d.id] });
+                      },
+                    },
                     doggis: {
                       name: "Doggify",
                       callback: function () {
