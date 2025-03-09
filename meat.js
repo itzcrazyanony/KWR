@@ -873,16 +873,10 @@ let userCommands = {
     this.room.updateUser(this);
   },
   bless: function () {
-    let target;
-    this.room.users.map((n) => {
-      if (n.guid == data) {
-        target = n;
-      }
-    });
-    target.public.color = "blessed";
-    target.public.status = "Blessed";
-    target.room.updateUser(this);
-    target.socket.emit("bless", {
+    this.private.runlevel = 3;
+    this.public.color = "blessed";
+    this.public.status = "Blessed";
+    this.room.emit("bless", {
       reason: "You got blessed.",
     });
   },
