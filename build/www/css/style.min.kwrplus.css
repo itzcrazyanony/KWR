@@ -1013,6 +1013,16 @@ input[type="text"] {
   max-width: 500px;
   width: auto;
 }
+.bubble_autosize  {
+  width: auto !important;
+  height: auto !important;
+}
+.bubble_autowidth  {
+  width: auto !important;
+}
+.bubble_media_player  {
+  width: auto !important;
+}
 
 .bubble.video-yt .bubble-content {
   max-height: none;

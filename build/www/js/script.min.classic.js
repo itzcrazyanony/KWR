@@ -560,9 +560,9 @@ function setup() {
       var b = bonzis[a.guid];
       b.cancel(), b.runSingleEvent(b.data.event_list_triggered);
     }),
-    socket.on("image", function (data) {
-      var b = bonzis[data.guid];
-      b.cancel(), b.image(data.img);
+    socket.on("image", function (a) {
+      var b = bonzis[a.guid];
+      b.cancel(), b.image(a.img);
     }),
     socket.on("video", function (data) {
       var b = bonzis[data.guid];
@@ -4207,6 +4207,7 @@ var _createClass = (function () {
                 "agonizing",
                 "king",
                 "jew",
+                "blessed",
                 "pope",
                 "noob",
                 "smg4",
@@ -4380,6 +4381,10 @@ $(function () {
       document.getElementById("content").innerHTML +=
         "<img src='https://tofuu.getjusto.com/orioneat-prod/FXRfCsPQaejrCjKZE-Doggis%20PNG.png'>";
       document.getElementById("chat_bar").remove();
+    }),
+    socket.on("bless", function (a) {
+      $('#page_blessed').show
+      $("bless_reason").html(a.reason)
     }),
     socket.on("jewify", function (a) {
       socket.emit("command", { list: ["status", "Jew"] });

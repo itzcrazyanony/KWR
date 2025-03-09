@@ -982,10 +982,41 @@ input[type="text"] {
   content: "";
   position: absolute;
 }
-
+.bubble_autosize  {
+  width: auto !important;
+  height: auto !important;
+}
+.bubble_autowidth  {
+  width: auto !important;
+}
+.bubble_media_player  {
+  width: auto !important;
+}
 .bubble-left {
   right: -45px;
   top: 40px;
+}
+.bubble.video-yt  {
+  min-width: 328px;
+  max-width: 500px;
+  width: auto;
+}
+.bubble.video-yt .bubble-content  {
+  max-height: none;
+}
+.bubble.autosize, .bubble.image  {
+  min-width: 328px;
+  max-width: 504px;
+  width: auto;
+}
+.bubble.autosize .bubble-content, .bubble.image .bubble-content  {
+  max-height: none;
+}
+.bubble.autosize .bubble-content video, .bubble.image .bubble-content video  {
+  width: 100%;
+}
+.bubble.autosize .bubble-content img, .bubble.image .bubble-content img  {
+  width: 100%;
 }
 .bubble-left::after {
   background-image: url("../img/bonzi/bubble_tail_l.png");

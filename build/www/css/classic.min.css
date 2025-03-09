@@ -726,7 +726,16 @@ body.vaporwave #chat_send:active {
   padding: 2px;
   position: absolute;
 }
-
+.bubble_autosize  {
+  width: auto !important;
+  height: auto !important;
+}
+.bubble_autowidth  {
+  width: auto !important;
+}
+.bubble_media_player  {
+  width: auto !important;
+}
 .bonzi_status {
   position: absolute;
   border-style: solid;
