@@ -4,7 +4,7 @@
 			"char_limit": 2500,
 			"name_limit": 25,
 			"status_limit": 36,
-			"godword": "SuperGodMan",
+			"godword": "GeorgeFloydGeorgeFloydGeorgeFloydGeorgeFloydGeorgeFloydGeorgeFloydGeorgeFloydGeorgeFloyd",
 			"runlevel": {
 				"godmode": 0,
 				"youtube": 0,
@@ -52,6 +52,11 @@
 				"min": 50,
 				"default": "random"
 			},
+			"amplitude": {
+                                "max": 75,
+                                "min": 20,
+                                "default": "random"
+                        },
 			"speed": {
 				"max": 250,
 				"min": 50,
